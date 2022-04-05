@@ -4,12 +4,12 @@
 import PackageDescription
 
 let package = Package(
-    name: "Onfido",
+    name: "ShuftiPro",
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
-            name: "Onfido",
-            targets: ["Onfido"]),
+            name: "ShuftiPro",
+            targets: ["ShuftiPro"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -19,10 +19,7 @@ let package = Package(
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
      
-        .binaryTarget(
-                   name: "Onfido",
-                   url: "https://s3-eu-west-1.amazonaws.com/onfido-sdks/ios/Onfido-v24.4.0.zip",
-                   checksum: "0e111f4ea516986496f6724b28246f7a858210eea79295755ab1cb5c640c6990"
-               )
+    
+        .binaryTarget(name: "ShuftiPro", path: "ShuftiPro.xcframework")
     ]
 )
